@@ -1,8 +1,5 @@
 
-.project
-*.class
-WoWsInfo/src/value/key.js
-API/parser.py
-API/node_modules/
-API/package-lock.json
-API/temp.json
+parser.py
+node_modules/
+package-lock.json
+temp.json
