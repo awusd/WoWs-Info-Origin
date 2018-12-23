@@ -9,3 +9,5 @@ This allows you to view the ship model online.
 
 ### Version
 All WoWs version inside a single array as json. There will be format change so do not rely on this for now. 
+
+### Upgrade slot
