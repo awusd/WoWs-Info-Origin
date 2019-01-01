@@ -28,3 +28,25 @@ for (let table of wiki) {
 }
 
 let json = JSON.stringify(slot);
+
+/**
+ * This is the second part
+ * You need to get all upgrades from WarGaming API by yourself
+ */
+data = json.data;
+// Parse json here
+for (let a in data) {
+	let slot = data[a].image.toLowerCase();
+	for (let i = 1; i <= 6; i++) {
+    for (let b in image[i]) {
+      if (slot.includes(image[i][b])) {
+        data[a]['slot'] = i + 1;
+      }
+    }
+  }
+}
+
+for (let a in data) {
+	delete data[a].consumable_id;
+ 	delete data[a].image;
+}
