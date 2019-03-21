@@ -1,5 +1,5 @@
 # WoWs Info Origin
-Note that UWP version is experimental. Some features are removed in order to make it work. It might not even have any updates. The only advantage of it is that RS works locally. Please download from [Microsoft Store]().
+Note that UWP version is experimental. Some features are removed in order to make it work. It might not even have any updates. The only advantage of it is that RS works locally. Please download from [Microsoft Store](https://www.microsoft.com/p/wows-info-origin/9pgmbs76500s).
 
 ### Run this project
 *Note that you need to manully link some libraries before running.*
