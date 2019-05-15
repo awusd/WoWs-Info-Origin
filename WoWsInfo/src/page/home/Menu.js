@@ -12,10 +12,11 @@ import { List, Colors } from 'react-native-paper';
 import { WoWsInfo, SectionTitle, AppName, Donation } from '../../component';
 import { lang } from '../../value/lang';
 import { SafeAction, Downloader } from '../../core';
-import { ThemeBackColour, TintColour } from '../../value/colour';
+import { ThemeBackColour } from '../../value/colour';
 import { getCurrDomain, getCurrServer, getCurrPrefix, APP, LOCAL, getFirstLaunch, setFirstLaunch, setLastLocation } from '../../value/data';
 import { Loading } from '../common/Loading';
 import { FlatGrid } from 'react-native-super-grid';
+import { GREEN } from 'react-native-material-color';
 
 class Menu extends PureComponent {
 
@@ -139,7 +140,7 @@ class Menu extends PureComponent {
         <SectionTitle title={lang.wiki_section_title}/>
         <FlatGrid items={this.wiki} itemDimension={300} renderItem={({item}) => {
           return <List.Item title={item.t} style={{padding: 0, paddingLeft: 8}} onPress={() => item.p()} key={item.t}
-          left={() => <List.Icon style={[icon, ThemeBackColour()]} color={TintColour()[300]} icon={item.i}/>}
+          left={() => <List.Icon style={[icon, ThemeBackColour()]} color={GREEN[300]} icon={item.i}/>}
           right={() => isAndroid ? null : <List.Icon color={Colors.grey500} icon='keyboard-arrow-right'/>} />
         }} spacing={0} keyboardShouldPersistTaps='always'/>
         <SectionTitle title={lang.extra_section_title}/>

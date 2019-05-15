@@ -7,7 +7,7 @@
 import React, { Component } from 'react';
 import { StatusBar, Image, StyleSheet, ActivityIndicator } from 'react-native';
 import { Surface } from 'react-native-paper';
-import { BLUE } from 'react-native-material-color';
+import { GREEN } from 'react-native-material-color';
 import { lang } from '../../value/lang';
 
 class Loading extends Component {
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: BLUE[500]
+    backgroundColor: GREEN[500]
   },
   logo: {
     tintColor: 'white'
