@@ -5,8 +5,8 @@
  */
 
 import React, { Component } from 'react';
-import { View, FlatList, ScrollView, StyleSheet } from 'react-native';
-import { Text, TextInput, List, Checkbox, Button } from 'react-native-paper';
+import { View, FlatList, TextInput, ScrollView, StyleSheet } from 'react-native';
+import { Text, List, Checkbox, Button } from 'react-native-paper';
 import { WoWsInfo, FooterPlus, Space } from '../../component';
 import { lang } from '../../value/lang';
 import { SAVED } from '../../value/data';
@@ -53,7 +53,7 @@ class WarshipFilter extends Component {
 
     return (
       <WoWsInfo title={lang.wiki_warship_filter_placeholder} onPress={() => this.refs['search'].focus()}>
-        <TextInput label={lang.wiki_warship_filter_placeholder} ref='search' autoCorrect={false}
+        <TextInput placeholder={lang.wiki_warship_filter_placeholder} ref='search' autoCorrect={false}
           onChangeText={t => this.setState({name: t})} onEndEditing={() => {
             // Do not go back if it is still empty
             if (name.trim(' ').length > 0) this.applyAll();
