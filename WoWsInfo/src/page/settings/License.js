@@ -13,6 +13,7 @@ import { lang } from '../../value/lang';
 
 const libraries = [{name: 'react', link: 'https://github.com/facebook/react'},
     {name: 'react-native', link: 'https://github.com/facebook/react-native'},
+    {name: 'react-native-windows', link: 'https://github.com/Microsoft/react-native-windows'},
     {name: 'react-native-device-detection', link: 'https://github.com/m0ngr31/react-native-device-detection'},
     {name: 'react-native-localization', link: 'https://github.com/stefalda/ReactNativeLocalization'},
     {name: 'react-native-material-color', link: 'https://github.com/DerayGa/react-native-material-color'},
